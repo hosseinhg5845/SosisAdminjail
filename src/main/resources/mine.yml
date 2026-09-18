@@ -1,0 +1,17 @@
+enabled: true
+respawn-time: 30
+mine-size: 1
+
+drops:
+  enabled: false
+  drop-chance: 50
+
+messages:
+  no-permission: "&cYou don't have permission!"
+  mine-set: "&aMine set successfully at your location!"
+  mine-deleted: "&cMine deleted successfully!"
+  mine-not-found: "&cMine not found!"
+  mine-respawn: "&aMine blocks respawned!"
+  mine-select: "&eClick on a block to set the mine center!"
+  mine-cancelled: "&cMine selection cancelled!"
+  mine-place: "&cYou cannot place blocks in the mine!"

@@ -1,0 +1,104 @@
+debug-mode: false
+
+pickaxe:
+  name: "&cAdmin Jail Pickaxe"
+  material: IRON_PICKAXE
+  unbreakable: true
+
+features:
+  block-commands: true
+  block-teleport: true
+  clear-drops-on-death: true
+  clear-exp-on-death: true
+  respawn-in-jail: true
+  block-wrong-pickaxe: true
+  show-action-bar: true
+  auto-save-progress: true
+  show-reason-action-bar: false
+  boss-bar-enabled: true
+  visit-jail: true
+  transfer-jail: true
+  discount-blocks: true
+  jail-title: true
+  jail-sound: true
+  anti-cheat: false
+
+discount:
+  enabled: true
+  cost-per-block: 100
+
+sounds:
+  jail-sound: "ENTITY_ENDERMAN_TELEPORT"
+  unjail-sound: "ENTITY_PLAYER_LEVELUP"
+  volume: 1.0
+  pitch: 1.0
+
+titles:
+  jailed-title: "&c&lYOU HAVE BEEN JAILED!"
+  jailed-subtitle: "&7Reason: &e%reason%"
+  freed-title: "&a&lYOU HAVE BEEN FREED!"
+  freed-subtitle: "&7Thank you for your service"
+  fade-in: 10
+  stay: 70
+  fade-out: 20
+
+boss-bar:
+  title: "&a%reason% &7| &7(&b%progress%%&7)"
+  color: "RED"
+  style: "SOLID"
+  update-interval: 20
+
+broadcast:
+  jail-enabled: true
+  unjail-enabled: false
+
+website:
+  enabled: false
+  url: "http://localhost/adminjail/api.php"
+  api-key: "123456"
+  timeout: 10
+  retry-count: 3
+
+discord:
+  enabled: false
+  webhook-url: "https://discord.com/api/webhooks/your-webhook-id/your-webhook-token"
+  username: "SosisAdminJail"
+  avatar-url: ""
+  embed-color: 16711680
+
+messages:
+  prefix: "&8[&bSosis&cAdminJail&8] "
+  no-permission: "&cYou don't have permission"
+  protected-block: "&cYou cannot break this block!"
+  action-bar: "&c%current%&7/&a%needed% &7(&b%progress%%&7)"
+  action-bar-reason: "&cReason: &e%reason% &7| &fBlocks: &a%current%&7/&a%needed%"
+  player-freed: "&aYou have been freed!"
+  reload-complete: "&aConfig & locations reloaded."
+  no-spawn-defined: "&cNo default spawn set for unjail."
+  no-teleport: "&cYou cannot teleport while jailed!"
+  no-command: "&cYou cannot use any commands while jailed!"
+  jail-broadcast: "&c%player% &ewas jailed in &c%jail% &efor &c%blocks% &eblocks. Reason: &c%reason%"
+  unjail-broadcast: "&a%player% &ewas freed from jail. Reason: &c%reason%"
+  player-not-jailed: "&cPlayer is not jailed!"
+  jail-not-found: "&cJail not found!"
+  jail-visited: "&aYou are now spectating %player%"
+  transfer-success: "&aPlayer transferred to %jail%"
+  discount-used: "&aYou paid %cost% and removed %blocks% blocks"
+  not-enough-money: "&cYou don't have enough money!"
+  discount-disabled: "&cBlock discount is disabled!"
+
+anti-cheat:
+  max-speed: 0.8
+  max-vertical-speed: 1.2
+  max-violations: 10
+  reset-time: 30000
+  kick-on-violation: true
+  max-blocks-per-second: 5
+  auto-mine-detection: false
+
+gui-stats:
+  background-color: "BLACK_STAINED_GLASS_PANE"
+  separator-color: "YELLOW_STAINED_GLASS_PANE"
+  title: "&6%player% - Jail Stats"
+  size: 54
+  history-limit: 15
